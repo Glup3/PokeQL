@@ -23,13 +23,6 @@ type Pokemon {
   types: [PokemonType]
 }
 
-type Version {
-  id: Int
-  name: String
-  names: [Name]
-  versionGroup: NamedAPIResource
-}
-
 type Name {
   name: String
   language: Language

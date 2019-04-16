@@ -1,0 +1,6 @@
+type Version {
+  id: Int
+  name: String
+  names: [Name]
+  versionGroup: NamedAPIResource
+}
