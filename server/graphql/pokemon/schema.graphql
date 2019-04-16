@@ -23,12 +23,6 @@ type Pokemon {
   types: [PokemonType]
 }
 
-type PokemonStat {
-  stat: NamedAPIResource
-  effort: Int
-  baseStat: Int
-}
-
 type PokemonMove {
   move: NamedAPIResource
   versionGroupDetails: [PokemonMoveVersion]

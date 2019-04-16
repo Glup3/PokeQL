@@ -24,7 +24,4 @@ exports.resolver = {
     versionGroup: ({ version_group }) => version_group,
     levelLearnedAt: ({ level_learned_at }) => level_learned_at,
   },
-  PokemonStat: {
-    baseStat: ({ base_stat }) => base_stat
-  }
 }
