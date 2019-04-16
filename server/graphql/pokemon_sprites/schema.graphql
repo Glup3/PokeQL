@@ -1,0 +1,10 @@
+type PokemonSprites {
+  frontDefault: String
+  frontShiny: String
+  frontFemale: String
+  frontShinyFemale: String
+  backDefault: String
+  backShiny: String
+  backFemale: String
+  backShinyFemale: String
+}

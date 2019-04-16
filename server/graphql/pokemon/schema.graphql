@@ -1,0 +1,93 @@
+type Query {
+  pokemon(id: Int, name: String): Pokemon
+  pokemons: [Pokemon]
+}
+
+type Pokemon {
+  id: Int!
+  name: String
+  baseExperience: Int
+  height: Int
+  isDefault: Boolean
+  order: Int
+  weight: Int
+  abilities: [Ability]
+  forms: [NamedAPIResource]
+  gameIndices: [VersionGameIndex]
+  heldItems: [PokemonHeldItems]
+  locationAreaEncounters: String
+  moves: [PokemonMove]
+  sprites: PokemonSprites
+  species: NamedAPIResource
+  stats: [PokemonStat]
+  types: [PokemonType]
+}
+
+type PokemonType {
+  slot: Int
+  type: NamedAPIResource
+}
+
+type PokemonStat {
+  stat: NamedAPIResource
+  effort: Int
+  baseStat: Int
+}
+
+type PokemonMove {
+  move: NamedAPIResource
+  versionGroupDetails: [PokemonMoveVersion]
+}
+
+type PokemonMoveVersion {
+  moveLearnMethod: NamedAPIResource
+  versionGroup: NamedAPIResource
+  levelLearnedAt: Int
+}
+
+type PokemonHeldItems {
+  item: NamedAPIResource
+  versionDetails: [PokemonHeldItemVersion]
+}
+
+type PokemonHeldItemVersion {
+  version: NamedAPIResource
+  rarity: Int
+}
+
+type Ability {
+  isHidden: Boolean
+  slot: Int
+  ability: NamedAPIResource
+}
+
+type VersionGameIndex {
+  gameIndex: Int
+  version: Version
+}
+
+type Version {
+  id: Int
+  name: String
+  names: [Name]
+  versionGroup: NamedAPIResource
+}
+
+type NamedAPIResource {
+  name: String
+  url: String
+}
+
+type Name {
+  name: String
+  language: Language
+}
+
+type Language {
+  id: Int!
+  name: String
+  official: Boolean
+  iso639: String
+  iso3166: String
+  names: [Name]
+}
