@@ -23,11 +23,6 @@ type Pokemon {
   types: [PokemonType]
 }
 
-type PokemonType {
-  slot: Int
-  type: NamedAPIResource
-}
-
 type PokemonStat {
   stat: NamedAPIResource
   effort: Int
