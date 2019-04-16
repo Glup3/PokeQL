@@ -16,9 +16,6 @@ exports.resolver = {
   PokemonHeldItems: {
     versionDetails: ({ version_details }) => version_details
   },
-  PokemonMove: {
-    versionGroupDetails: ({ version_group_details}) => version_group_details
-  },
   PokemonMoveVersion: {
     moveLearnMethod: ({ move_learn_method }) => move_learn_method,
     versionGroup: ({ version_group }) => version_group,

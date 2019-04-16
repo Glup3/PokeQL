@@ -23,11 +23,6 @@ type Pokemon {
   types: [PokemonType]
 }
 
-type PokemonMove {
-  move: NamedAPIResource
-  versionGroupDetails: [PokemonMoveVersion]
-}
-
 type PokemonMoveVersion {
   moveLearnMethod: NamedAPIResource
   versionGroup: NamedAPIResource
