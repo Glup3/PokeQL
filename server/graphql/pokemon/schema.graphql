@@ -23,11 +23,6 @@ type Pokemon {
   types: [PokemonType]
 }
 
-type Name {
-  name: String
-  language: Language
-}
-
 type Language {
   id: Int!
   name: String
