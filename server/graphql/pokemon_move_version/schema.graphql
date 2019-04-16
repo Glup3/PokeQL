@@ -1,0 +1,5 @@
+type PokemonMoveVersion {
+  moveLearnMethod: NamedAPIResource
+  versionGroup: NamedAPIResource
+  levelLearnedAt: Int
+}
