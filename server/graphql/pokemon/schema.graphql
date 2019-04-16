@@ -23,11 +23,6 @@ type Pokemon {
   types: [PokemonType]
 }
 
-type VersionGameIndex {
-  gameIndex: Int
-  version: Version
-}
-
 type Version {
   id: Int
   name: String

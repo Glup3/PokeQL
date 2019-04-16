@@ -1,0 +1,4 @@
+type VersionGameIndex {
+  gameIndex: Int
+  version: Version
+}
