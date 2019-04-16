@@ -73,11 +73,6 @@ type Version {
   versionGroup: NamedAPIResource
 }
 
-type NamedAPIResource {
-  name: String
-  url: String
-}
-
 type Name {
   name: String
   language: Language
