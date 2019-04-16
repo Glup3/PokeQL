@@ -11,7 +11,7 @@ type Pokemon {
   isDefault: Boolean
   order: Int
   weight: Int
-  abilities: [Ability]
+  abilities: [PokemonAbility]
   forms: [NamedAPIResource]
   gameIndices: [VersionGameIndex]
   heldItems: [PokemonHeldItems]
@@ -53,12 +53,6 @@ type PokemonHeldItems {
 type PokemonHeldItemVersion {
   version: NamedAPIResource
   rarity: Int
-}
-
-type Ability {
-  isHidden: Boolean
-  slot: Int
-  ability: NamedAPIResource
 }
 
 type VersionGameIndex {
