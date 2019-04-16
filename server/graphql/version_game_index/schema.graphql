@@ -1,4 +1,4 @@
 type VersionGameIndex {
   gameIndex: Int
-  version: Version
+  version: NamedAPIResource
 }
