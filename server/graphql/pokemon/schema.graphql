@@ -23,11 +23,6 @@ type Pokemon {
   types: [PokemonType]
 }
 
-type PokemonHeldItemVersion {
-  version: NamedAPIResource
-  rarity: Int
-}
-
 type VersionGameIndex {
   gameIndex: Int
   version: Version
