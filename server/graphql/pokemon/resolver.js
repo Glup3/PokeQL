@@ -12,8 +12,5 @@ exports.resolver = {
     gameIndices: ({ game_indices }) => game_indices,
     heldItems: ({ held_items }) => held_items,
     locationAreaEncounters: ({ location_area_encounters }) => location_area_encounters
-  },
-  PokemonHeldItems: {
-    versionDetails: ({ version_details }) => version_details
   }
 }
