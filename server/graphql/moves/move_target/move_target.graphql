@@ -1,0 +1,11 @@
+type Query {
+  moveTarget(id: Int, name: String): MoveTarget
+}
+
+type MoveTarget {
+  id: Int!
+  name: String
+  descriptions: [Description]
+  moves: [NamedAPIResource]
+  names: [Name]
+}
