@@ -60,6 +60,12 @@ class PokeAPI extends RESTDataSource {
     
     return result;
   }
+
+  async getMoveBattleStyleByNameOrID(id, name) {
+    const result = await this.get(`move-battle-style/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+    
+    return result;
+  }
 }
 
 module.exports = PokeAPI;

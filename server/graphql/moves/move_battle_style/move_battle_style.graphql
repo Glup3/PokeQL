@@ -1,0 +1,9 @@
+type Query {
+  moveBattleStyle(id: Int, name: String): MoveBattleStyle
+}
+
+type MoveBattleStyle {
+  id: Int!
+  name: String
+  names: [Name]
+}
