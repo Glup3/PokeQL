@@ -11,6 +11,7 @@ exports.resolver = {
     isDefault: ({ is_default }) => is_default,
     gameIndices: ({ game_indices }) => game_indices,
     heldItems: ({ held_items }) => held_items,
-    locationAreaEncounters: ({ location_area_encounters }) => location_area_encounters
+    locationAreaEncounters: ({ location_area_encounters }) => location_area_encounters,
+    baseExperience: ({ base_experience }) => base_experience
   }
 }
