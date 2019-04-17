@@ -1,0 +1,5 @@
+type PalParkEncounterSpecies {
+  baseScore: Int
+  rate: Int
+  pokemonSpecies: NamedAPIResource
+}

@@ -109,6 +109,12 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
+  async getPalParkAreaByNameOrID(id, name) {
+    const result = await this.get(`pal-park-area/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+    
+    return result;
+  }
+
   async getRegionByNameOrID(id, name) {
     const result = await this.get(`region/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
     

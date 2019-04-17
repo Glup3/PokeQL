@@ -1,0 +1,10 @@
+type Query {
+  palParkArea(id: Int, name: String): PalParkArea
+}
+
+type PalParkArea {
+  id: Int
+  name: String
+  names: [Name]
+  pokemonEncounters: [PalParkEncounterSpecies]
+}
