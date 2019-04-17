@@ -1,0 +1,13 @@
+type Query {
+  region(id: Int, name: String): Region
+}
+
+type Region {
+  id: Int
+  locations: [NamedAPIResource]
+  name: String
+  names: [Name]
+  mainGeneration: NamedAPIResource
+  pokedexes: [NamedAPIResource]
+  versionGroups: [NamedAPIResource]
+}
