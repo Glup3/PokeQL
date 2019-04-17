@@ -1,0 +1,11 @@
+type Query {
+  moveLearnMethod(id: Int, name: String): MoveLearnMethod
+}
+
+type MoveLearnMethod {
+  id: Int
+  name: String
+  descriptions: [Description]
+  names: [Name]
+  versionGroups: [NamedAPIResource]
+}
