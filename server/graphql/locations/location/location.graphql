@@ -1,0 +1,12 @@
+type Query {
+  location(id: Int, name: String): Location
+}
+
+type Location {
+  id: Int
+  name: String
+  region: NamedAPIResource
+  names: [Name]
+  gameIndices: [GenerationGameIndex]
+  areas: [NamedAPIResource]
+}
