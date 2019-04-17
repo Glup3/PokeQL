@@ -18,6 +18,12 @@ class PokeAPI extends RESTDataSource {
 
     return result;
   }
+
+  async getBerryFirmnessByNameOrID(id, name) {
+    const result = await this.get(`berry-firmness/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+    
+    return result;
+  }
 }
 
 module.exports = PokeAPI;

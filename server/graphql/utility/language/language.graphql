@@ -1,5 +1,5 @@
 type Language {
-  id: Int!
+  id: Int
   name: String
   official: Boolean
   iso639: String
