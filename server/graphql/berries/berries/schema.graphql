@@ -1,0 +1,18 @@
+type Query {
+  berry(id: Int, name: String): Berry
+}
+
+type Berry {
+  id: Int!
+  name: String
+  growthTime: Int
+  maxHarvest: Int
+  naturalGiftPower: Int
+  size: Int
+  smoothness: Int
+  soilDryness: Int
+  firmness: NamedAPIResource
+  # flavors
+  item: NamedAPIResource
+  naturalGiftType: NamedAPIResource
+}
