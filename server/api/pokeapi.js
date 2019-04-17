@@ -91,8 +91,8 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getMachineByNameOrID(id, name) {
-    const result = await this.get(`machine/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+  async getMachineByID(id) {
+    const result = await this.get(`machine/${id}`);
     
     return result;
   }
