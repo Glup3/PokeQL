@@ -14,7 +14,7 @@ type Pokemon {
   abilities: [PokemonAbility]
   forms: [NamedAPIResource]
   gameIndices: [VersionGameIndex]
-  heldItems: [PokemonHeldItems]
+  heldItems: [PokemonHeldItem]
   locationAreaEncounters: String
   moves: [PokemonMove]
   sprites: PokemonSprites

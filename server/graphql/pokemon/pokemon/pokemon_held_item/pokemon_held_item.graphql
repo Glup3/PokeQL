@@ -1,4 +1,4 @@
-type PokemonHeldItems {
+type PokemonHeldItem {
   item: NamedAPIResource
   versionDetails: [PokemonHeldItemVersion]
 }
