@@ -1,0 +1,10 @@
+type Query {
+  machine(id: Int!): Machine
+}
+
+type Machine {
+  id: Int
+  item: NamedAPIResource
+  move: NamedAPIResource
+  versionGroup: NamedAPIResource
+}
