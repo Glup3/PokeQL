@@ -42,6 +42,12 @@ class PokeAPI extends RESTDataSource {
     
     return result;
   }
+
+  async getSuperContestEffectByID(id) {
+    const result = await this.get(`super-contest-effect/${id}`);
+
+    return result;
+  }
 }
 
 module.exports = PokeAPI;
