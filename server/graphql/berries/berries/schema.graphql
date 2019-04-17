@@ -12,7 +12,7 @@ type Berry {
   smoothness: Int
   soilDryness: Int
   firmness: NamedAPIResource
-  # flavors
+  flavors: [BerryFlavorMap]
   item: NamedAPIResource
   naturalGiftType: NamedAPIResource
 }
