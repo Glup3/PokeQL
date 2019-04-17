@@ -1,0 +1,10 @@
+type Query {
+  moveCategory(id: Int, name: String): MoveCategory
+}
+
+type MoveCategory {
+  id: Int!
+  name: String
+  moves: NamedAPIResource
+  descriptions: [Description]
+}
