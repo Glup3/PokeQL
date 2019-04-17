@@ -1,4 +1,4 @@
-type MoveAilment {
+type MoveMetaData {
   ailment: NamedAPIResource
   category: NamedAPIResource
   minHits: Int

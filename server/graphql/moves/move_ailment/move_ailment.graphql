@@ -1,0 +1,10 @@
+type Query {
+  moveAilment(id: Int, name: String): MoveAilment
+}
+
+type MoveAilment {
+  id: Int
+  name: String
+  moves: [NamedAPIResource]
+  names: [Name]
+}

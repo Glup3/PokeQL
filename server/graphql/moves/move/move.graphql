@@ -19,7 +19,7 @@ type Move {
   flavorTextEntries: [MoveFlavorText]
   generation: NamedAPIResource
   machines: [MachineVersionDetail]
-  meta: MoveAilment
+  meta: MoveMetaData
   names: [Name]
   pastValues: [PastMoveStatValues]
   statChanges: [MoveStatChange]

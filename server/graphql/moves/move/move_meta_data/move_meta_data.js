@@ -1,5 +1,5 @@
 exports.resolver = {
-  MoveAilment: {
+  MoveMetaData: {
     minHits: ({ min_hits }) => min_hits,
     maxHits: ({ max_hits }) => max_hits,
     minTurns: ({ min_turns }) => min_turns,
