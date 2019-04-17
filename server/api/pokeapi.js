@@ -132,6 +132,12 @@ class PokeAPI extends RESTDataSource {
     
     return result;
   }
+
+  async getEncounterConditionValueByNameOrID(id, name) {
+    const result = await this.get(`encounter-condition-value/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+    
+    return result;
+  }
 }
 
 module.exports = PokeAPI;
