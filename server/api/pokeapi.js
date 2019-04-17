@@ -120,6 +120,12 @@ class PokeAPI extends RESTDataSource {
     
     return result;
   }
+
+  async getEncounterMethodByNameOrID(id, name) {
+    const result = await this.get(`encounter-method/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+    
+    return result;
+  }
 }
 
 module.exports = PokeAPI;

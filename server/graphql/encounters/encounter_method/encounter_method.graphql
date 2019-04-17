@@ -1,0 +1,10 @@
+type Query {
+  encounterMethod(id: Int, name: String): EncounterMethod
+}
+
+type EncounterMethod {
+  id: Int
+  name: String
+  order: Int
+  names: [Name]
+}
