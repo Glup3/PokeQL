@@ -1,0 +1,10 @@
+type Query {
+  encounterCondition(id: Int, name: String): EncounterCondition
+}
+
+type EncounterCondition {
+  id: Int
+  name: String
+  names: [Name]
+  values: [NamedAPIResource]
+}
