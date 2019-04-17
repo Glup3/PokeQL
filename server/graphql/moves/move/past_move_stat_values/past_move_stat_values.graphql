@@ -1,0 +1,9 @@
+type PastMoveStatValues {
+  accuracy: PastMoveStatValues
+  effectChance: Int
+  power: Int
+  pp: Int
+  effectEntries: [VerboseEffect]
+  type: NamedAPIResource
+  versionGroup: NamedAPIResource
+}

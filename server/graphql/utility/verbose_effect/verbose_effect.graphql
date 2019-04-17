@@ -1,0 +1,5 @@
+type VerboseEffect {
+  effect: String
+  shortEffect: String
+  language: NamedAPIResource
+}

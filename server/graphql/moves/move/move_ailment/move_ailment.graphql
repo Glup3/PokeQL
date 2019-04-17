@@ -1,0 +1,14 @@
+type MoveAilment {
+  ailment: NamedAPIResource
+  category: NamedAPIResource
+  minHits: Int
+  maxHits: Int
+  minTurns: Int
+  maxTurns: Int
+  drain: Int
+  healing: Int
+  critRate: Int
+  ailmentChance: Int
+  flinchChance: Int
+  statChance: Int
+}

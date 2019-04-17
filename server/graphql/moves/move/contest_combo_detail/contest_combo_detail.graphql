@@ -1,0 +1,4 @@
+type ContestComboDetail {
+  useBefore: [NamedAPIResource]
+  useAfter: [NamedAPIResource]
+}

@@ -1,0 +1,29 @@
+type Query {
+  move(id: Int, name: String): Move
+}
+
+type Move {
+  id: Int!
+  name: String
+  accuracy: Int
+  effectChance: Int
+  pp: Int
+  priority: Int
+  power: Int
+  contestCombos: ContestComboSets
+  contestType: NamedAPIResource
+  contestEffect: APIResource
+  damageClass: NamedAPIResource
+  effectEntries: [VerboseEffect]
+  effectChanges: [AbilityEffectChange]
+  flavorTextEntries: [MoveFlavorText]
+  generation: NamedAPIResource
+  machines: [MachineVersionDetail]
+  meta: MoveAilment
+  names: [Name]
+  pastValues: [PastMoveStatValues]
+  statChanges: [MoveStatChange]
+  superContestEffect: APIResource
+  target: NamedAPIResource
+  type: NamedAPIResource
+}

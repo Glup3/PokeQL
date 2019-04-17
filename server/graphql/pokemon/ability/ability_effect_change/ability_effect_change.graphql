@@ -1,0 +1,4 @@
+type AbilityEffectChange {
+  effectEntries: [Effect]
+  versionGroup: NamedAPIResource
+}

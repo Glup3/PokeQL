@@ -1,0 +1,5 @@
+type MoveFlavorText {
+  flavorText: String
+  language: NamedAPIResource
+  versionGroup: NamedAPIResource
+}
