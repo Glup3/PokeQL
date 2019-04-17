@@ -1,0 +1,11 @@
+type Query {
+  contestEffect(id: Int, name: String): ContestEffect
+}
+
+type ContestEffect {
+  id: Int!
+  appeal: Int
+  jam: Int
+  effectEntries: [Effect]
+  flavorTextEntries: [FlavorText]
+}
