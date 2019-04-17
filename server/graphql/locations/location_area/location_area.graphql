@@ -1,0 +1,13 @@
+type Query {
+  locationArea(id: Int, name: String): LocationArea
+}
+
+type LocationArea {
+  id: Int
+  name: String
+  gameIndex: Int
+  encounterMethodRates: [EncounterMethodRate]
+  location: NamedAPIResource
+  names: [Name]
+  pokemonEncounters: [PokemonEncounter]
+}

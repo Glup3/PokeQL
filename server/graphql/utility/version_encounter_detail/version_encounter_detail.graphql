@@ -1,0 +1,5 @@
+type VersionEncounterDetail {
+  version: NamedAPIResource
+  maxChance: Int
+  encounterDetails: [Encounter]
+}

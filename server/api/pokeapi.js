@@ -102,6 +102,12 @@ class PokeAPI extends RESTDataSource {
     
     return result;
   }
+
+  async getLocationAreaByNameOrID(id, name) {
+    const result = await this.get(`location-area/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+    
+    return result;
+  }
 }
 
 module.exports = PokeAPI;

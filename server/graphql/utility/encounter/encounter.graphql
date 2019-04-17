@@ -1,0 +1,7 @@
+type Encounter {
+  minLevel: Int
+  maxLevel: Int
+  conditionValues: [NamedAPIResource]
+  chance: Int
+  method: NamedAPIResource
+}

@@ -1,0 +1,4 @@
+type EncounterVersionDetails {
+  rate: Int
+  version: NamedAPIResource
+}
