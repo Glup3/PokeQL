@@ -1,0 +1,11 @@
+type Query {
+  moveDamageClass(id: Int, name: String): MoveDamageClass
+}
+
+type MoveDamageClass {
+  id: Int
+  name: String
+  descriptions: [Description]
+  moves: [NamedAPIResource]
+  names: [Name]
+}
