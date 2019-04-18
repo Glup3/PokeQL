@@ -156,6 +156,12 @@ class PokeAPI extends RESTDataSource {
     
     return result;
   }
+
+  async getPokedexByNameOrID(id, name) {
+    const result = await this.get(`pokedex/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+    
+    return result;
+  }
 }
 
 module.exports = PokeAPI;

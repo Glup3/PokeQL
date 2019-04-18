@@ -1,0 +1,14 @@
+type Query {
+  pokedex(id: Int, name: String): Pokedex
+}
+
+type Pokedex {
+  id: Int
+  name: String
+  isMainSeries: Boolean
+  descriptions: [Description]
+  names: [Name]
+  pokemonEntries: [PokemonEntry]
+  region: NamedAPIResource
+  versionGroups: [NamedAPIResource]
+}
