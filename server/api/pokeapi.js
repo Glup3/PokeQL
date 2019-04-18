@@ -31,6 +31,12 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
+  async getGrowthRateByNameOrID(id, name) {
+    const result = await this.get(`growth-rate/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+
+    return result;
+  }
+
   async getPokemonByNameOrID(id, name) {
     const result = await this.get(`pokemon/${MaxSenpaiUtils.getLeftOrRight(id, name) || 25}`);
 

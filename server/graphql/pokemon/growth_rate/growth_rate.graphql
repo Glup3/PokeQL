@@ -1,0 +1,12 @@
+type Query {
+  growthRate(id: Int, name: String): GrowthRate
+}
+
+type GrowthRate {
+  id: Int
+  name: String
+  formula: String
+  descriptions: [Description]
+  levels: [GrowthRateExperienceLevel]
+  pokemonSpecies: [NamedAPIResource]
+}
