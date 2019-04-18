@@ -1,0 +1,10 @@
+type Query {
+  eggGroup(id: Int, name: String): EggGroup
+}
+
+type EggGroup {
+  id: Int
+  name: String
+  names: [Name]
+  pokemonSpecies: [NamedAPIResource]
+} 
