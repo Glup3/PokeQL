@@ -1,0 +1,4 @@
+type PokemonSpeciesGender {
+  rate: Int
+  pokemonSpecies: NamedAPIResource
+}
