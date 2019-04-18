@@ -1,0 +1,4 @@
+type AwesomeName {
+  awesomeName: String
+  language: NamedAPIResource
+}

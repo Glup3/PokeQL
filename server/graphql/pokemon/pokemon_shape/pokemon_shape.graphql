@@ -1,0 +1,11 @@
+type Query {
+  pokemonShape(id: Int, name: String): PokemonShape
+}
+
+type PokemonShape {
+  id: Int
+  name: String
+  awesomeNames: [AwesomeName]
+  names: [Name]
+  pokemonSpecies: [NamedAPIResource]
+}
