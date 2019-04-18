@@ -1,0 +1,11 @@
+type Query {
+  itemAttribute(id: Int, name: String): ItemAttribute
+}
+
+type ItemAttribute {
+  id: Int
+  name: String
+  items: [NamedAPIResource]
+  names: [Name]
+  descriptions: [Description]
+}
