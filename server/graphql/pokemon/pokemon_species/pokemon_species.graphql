@@ -1,0 +1,31 @@
+type Query {
+  pokemonSpecies(id: Int, name: String): PokemonSpecies
+}
+
+type PokemonSpecies {
+  id: Int
+  name: String
+  order: Int
+  genderRate: Int
+  captureRate: Int
+  baseHappiness: Int
+  isBaby: Boolean
+  hatchCounter: Int
+  hasGenderDifferences: Boolean
+  formsSwitchable: Boolean
+  growthRate: NamedAPIResource
+  pokedexNumbers: [PokemonSpeciesDexEntry]
+  eggGroups: [NamedAPIResource]
+  color: NamedAPIResource
+  shape: NamedAPIResource
+  evolvesFromSpecies: NamedAPIResource
+  evolutionChain: APIResource
+  habitat: NamedAPIResource
+  generation: NamedAPIResource
+  names: [Name]
+  palParkEncounters: [PalParkEncounterArea]
+  flavorTextEntries: [FlavorText]
+  formDescriptions: [Description]
+  genera: [Genus]
+  varieties: [PokemonSpeciesVariety]
+}

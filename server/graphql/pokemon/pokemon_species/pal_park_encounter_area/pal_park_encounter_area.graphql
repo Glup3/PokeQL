@@ -1,0 +1,5 @@
+type PalParkEncounterArea {
+  baseScore: Int
+  rate: Int
+  area: NamedAPIResource
+}

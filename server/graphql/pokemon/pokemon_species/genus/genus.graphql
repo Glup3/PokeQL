@@ -1,0 +1,4 @@
+type Genus {
+  genus: String
+  language: NamedAPIResource
+}
