@@ -1,0 +1,19 @@
+type Query {
+  pokemonForm(id: Int, name: String): PokemonForm
+}
+
+type PokemonForm {
+  id: Int
+  name: String
+  order: Int
+  formOrder: Int
+  isDefault: Boolean
+  isBattleOnly: Boolean
+  isMega: Boolean
+  formName: String
+  pokemon: NamedAPIResource
+  sprites: PokemonFormSprites
+  versionGroup: NamedAPIResource
+  names: [Name]
+  formNames: [Name]
+}

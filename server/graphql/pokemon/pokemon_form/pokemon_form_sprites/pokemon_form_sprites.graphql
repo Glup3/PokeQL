@@ -1,0 +1,6 @@
+type PokemonFormSprites {
+  frontDefault: String
+  frontShiny: String
+  backDefault: String
+  backShiny: String
+}
