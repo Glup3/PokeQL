@@ -1,0 +1,10 @@
+type Query {
+  itemPocket(id: Int, name: String): ItemPocket
+}
+
+type ItemPocket {
+  id: Int
+  name: String
+  categories: [NamedAPIResource]
+  names: [Name]
+}
