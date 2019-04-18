@@ -1,0 +1,10 @@
+type Query {
+  pokemonColor(id: Int, name: String): PokemonColor
+}
+
+type PokemonColor {
+  id: Int
+  name: String
+  names: [Name]
+  pokemonSpecies: [NamedAPIResource]
+}
