@@ -168,6 +168,12 @@ class PokeAPI extends RESTDataSource {
     
     return result;
   }
+
+  async getItemFlingEffectByNameOrID(id, name) {
+    const result = await this.get(`item-fling-effect/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+    
+    return result;
+  }
 }
 
 module.exports = PokeAPI;

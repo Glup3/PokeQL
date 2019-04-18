@@ -1,0 +1,10 @@
+type Query {
+  itemFlingEffect(id: Int, name: String): ItemFlingEffect
+}
+
+type ItemFlingEffect {
+  id: Int
+  name: String
+  effectEntries: [Effect]
+  items: [NamedAPIResource]
+}
