@@ -1,0 +1,10 @@
+type Query {
+  pokeathlonStat(id: Int, name: String): PokeathlonStat
+}
+
+type PokeathlonStat {
+  id: Int
+  name: String
+  names: [Name]
+  affectingNatures: NaturePokeathlonStatAffectSets
+}

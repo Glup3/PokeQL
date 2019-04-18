@@ -1,0 +1,4 @@
+type NaturePokeathlonStatAffect {
+  maxChange: Int
+  nature: NamedAPIResource
+}

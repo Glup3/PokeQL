@@ -1,0 +1,4 @@
+type NaturePokeathlonStatAffectSets {
+  increase: [NaturePokeathlonStatAffect]
+  decrease: [NaturePokeathlonStatAffect]
+}
