@@ -1,0 +1,5 @@
+type AbilityFlavorText {
+  flavorText: String
+  language: NamedAPIResource
+  versionGroup: NamedAPIResource
+}

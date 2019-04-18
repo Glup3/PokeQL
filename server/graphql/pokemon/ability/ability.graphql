@@ -1,0 +1,15 @@
+type Query {
+  ability(id: Int, name: String): Ability
+}
+
+type Ability {
+  id: Int
+  name: String
+  isMainSeries: Boolean
+  generation: NamedAPIResource
+  names: [Name]
+  effectEntries: [Effect]
+  effectChanges: [AbilityEffectChange]
+  flavorTextEntries: [AbilityFlavorText]
+  pokemon: [AbilityPokemon]
+}

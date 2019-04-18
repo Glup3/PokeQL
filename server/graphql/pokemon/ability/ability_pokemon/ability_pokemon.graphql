@@ -1,0 +1,5 @@
+type AbilityPokemon {
+  isHidden: Boolean
+  slot: Int
+  pokemon: NamedAPIResource
+}
