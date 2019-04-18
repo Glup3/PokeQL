@@ -1,0 +1,4 @@
+type MoveStatAffectSets {
+  increase: [MoveStatAffect]
+  decrease: [MoveStatAffect]
+}

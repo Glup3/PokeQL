@@ -1,0 +1,15 @@
+type Query {
+  stat(id: Int, name: String): Stat
+}
+
+type Stat {
+  id: Int
+  name: String
+  gameIndex: Int
+  isBattleOnly: Boolean
+  affectingMoves: MoveStatAffectSets
+  affectingNatures: NatureStatAffectSets
+  characteristics: [APIResource]
+  moveDamageClass: NamedAPIResource
+  names: [Name]
+}
