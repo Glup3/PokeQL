@@ -1,0 +1,8 @@
+type TypeRelations {
+  noDamageTo: [NamedAPIResource]
+  halfDamageTo: [NamedAPIResource]
+  doubleDamageTo: [NamedAPIResource]
+  noDamageFrom: [NamedAPIResource]
+  halfDamageFrom: [NamedAPIResource]
+  doubleDamageFrom: [NamedAPIResource]
+}

@@ -1,0 +1,4 @@
+type TypePokemon {
+  slot: Int
+  pokemon: NamedAPIResource
+}
