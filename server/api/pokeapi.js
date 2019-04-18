@@ -138,6 +138,12 @@ class PokeAPI extends RESTDataSource {
     
     return result;
   }
+
+  async getEvolutionChainByID(id) {
+    const result = await this.get(`evolution-chain/${id}`);
+    
+    return result;
+  }
 }
 
 module.exports = PokeAPI;

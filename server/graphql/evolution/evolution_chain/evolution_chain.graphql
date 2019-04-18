@@ -1,0 +1,9 @@
+type Query {
+  evolutionChain(id: Int!): EvolutionChain
+}
+
+type EvolutionChain {
+  id: Int
+  babyTriggerItem: NamedAPIResource
+  chain: ChainLink
+}

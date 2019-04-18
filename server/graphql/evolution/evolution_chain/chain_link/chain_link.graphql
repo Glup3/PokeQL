@@ -1,0 +1,6 @@
+type ChainLink {
+  isBaby: Boolean
+  species: NamedAPIResource
+  evolutionDetails: [EvolutionDetail]
+  evolvesTo: [ChainLink]
+}
