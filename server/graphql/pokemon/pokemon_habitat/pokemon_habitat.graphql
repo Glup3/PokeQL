@@ -1,0 +1,10 @@
+type Query {
+  pokemonHabitat(id: Int, name: String): PokemonHabitat
+}
+
+type PokemonHabitat {
+  id: Int
+  name: String
+  names: [Name]
+  pokemonSpecies: [NamedAPIResource]
+}
