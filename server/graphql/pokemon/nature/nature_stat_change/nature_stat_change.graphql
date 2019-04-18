@@ -1,0 +1,4 @@
+type NatureStatChange {
+  maxChange: Int
+  pokeathlonStat: NamedAPIResource
+}

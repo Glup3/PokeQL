@@ -1,0 +1,5 @@
+type MoveBattleStylePreference {
+  lowHpPreference: Int
+  highHpPreference: Int
+  moveBattleStyle: NamedAPIResource
+}

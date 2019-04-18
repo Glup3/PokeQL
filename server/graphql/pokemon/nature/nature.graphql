@@ -1,0 +1,15 @@
+type Query {
+  nature(id: Int, name: String): Nature
+}
+
+type Nature {
+  id: Int
+  name: String
+  decreasedStat: NamedAPIResource
+  increasedStat: NamedAPIResource
+  hatesFlavor: NamedAPIResource
+  likesFlavor: NamedAPIResource
+  pokeathlonStatChanges: [NatureStatChange]
+  moveBattleStylePreferences: [MoveBattleStylePreference]
+  names: [Name]
+}
