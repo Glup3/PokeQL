@@ -1,0 +1,21 @@
+type Query {
+  item(id: Int, name: String): Item
+}
+
+type Item {
+  id: Int,
+  name: String,
+  cost: Int
+  flingPower: Int
+  flingEffect: NamedAPIResource
+  attributes: [NamedAPIResource]
+  category: NamedAPIResource
+  effectEntries: [VerboseEffect]
+  flavorTextEntries: [VersionGroupFlavorText]
+  gameIndices: [GenerationGameIndex]
+  names: [Name]
+  sprites: ItemSprites
+  heldByPokemon: [ItemHolderPokemon]
+  babyTriggerFor: NamedAPIResource
+  machines: [MachineVersionDetail]
+}

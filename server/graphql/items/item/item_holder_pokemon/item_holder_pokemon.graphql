@@ -1,0 +1,4 @@
+type ItemHolderPokemon {
+  pokemon: String
+  versionDetails: [ItemHolderPokemonVersionDetail]
+}

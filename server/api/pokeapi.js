@@ -151,26 +151,8 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getGenerationByNameOrID(id, name) {
-    const result = await this.get(`generation/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-    
-    return result;
-  }
-
-  async getPokedexByNameOrID(id, name) {
-    const result = await this.get(`pokedex/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-    
-    return result;
-  }
-
-  async getVersionByNameOrID(id, name) {
-    const result = await this.get(`version/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-    
-    return result;
-  }
-
-  async getVersionGroupByNameOrID(id, name) {
-    const result = await this.get(`version-group/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+  async getItemByNameOrID(id, name) {
+    const result = await this.get(`item/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
     
     return result;
   }

@@ -1,0 +1,5 @@
+type VersionGroupFlavorText {
+  text: String
+  language: NamedAPIResource
+  versionGroup: NamedAPIResource
+}

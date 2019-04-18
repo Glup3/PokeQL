@@ -1,0 +1,4 @@
+type ItemHolderPokemonVersionDetail {
+  rarity: String
+  version: NamedAPIResource
+}
