@@ -168,6 +168,12 @@ class PokeAPI extends RESTDataSource {
     
     return result;
   }
+
+  async getVersionGroupByNameOrID(id, name) {
+    const result = await this.get(`version-group/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
+    
+    return result;
+  }
 }
 
 module.exports = PokeAPI;

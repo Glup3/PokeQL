@@ -1,0 +1,14 @@
+type Query {
+  versionGroup(id: Int, name: String): VersionGroup
+}
+
+type VersionGroup {
+  id: Int
+  name: String
+  order: Int
+  generation: NamedAPIResource
+  moveLearnMethods: [NamedAPIResource]
+  pokedexes: [NamedAPIResource]
+  regions: [NamedAPIResource]
+  versions: [NamedAPIResource]
+}
