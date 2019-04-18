@@ -1,3 +1,7 @@
+type Query {
+  version(id: Int, name: String): Version
+} 
+
 type Version {
   id: Int
   name: String
