@@ -19,12 +19,6 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getPokemonByNameOrID(id, name) {
-    const result = await this.get(`pokemon/${MaxSenpaiUtils.getLeftOrRight(id, name) || 25}`);
-
-    return result;
-  }
-
   async getBerryByNameOrID(id, name) {
     const result = await this.get(`berry/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
 
