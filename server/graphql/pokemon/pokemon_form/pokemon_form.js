@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     pokemonForm: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getPokemonFormByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('pokemon-form', id, name);
     }
   },
   PokemonForm: {
