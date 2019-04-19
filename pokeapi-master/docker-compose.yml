@@ -32,8 +32,8 @@ services:
       context: ./Resources
       dockerfile: ./docker/web/Dockerfile
     ports:
-      - "80:80"
-      - "443:443"
+      - "5080:80"
+      - "5443:443"
     volumes_from:
       - app:ro
     links:
