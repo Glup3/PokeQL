@@ -21,11 +21,26 @@ class PokeAPI extends RESTDataSource {
   }
 
   async getEndpointList(endpoint, perPage, page) {
-    const result = await this.get(endpoint, {
+    const result = this.get(endpoint, {
       limit: perPage,
       offset: page * perPage
     });
-    
+
+    return await result.then((resourceList) => this.resolveAPIResourceList(resourceList['results']));
+  }
+
+  async resolveAPIResourceList(resourceList) {
+    let result = [];
+
+    await Promise.all(resourceList.map((resource) => {
+      const path = resource['url'].replace(this.baseURL, '');
+      const resolved = this.get(path);
+
+      result.push(resolved);
+
+      return resolved;
+    })); 
+
     return result;
   }
 }
