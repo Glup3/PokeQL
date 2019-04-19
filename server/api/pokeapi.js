@@ -19,12 +19,6 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getPokemonShapeByNameOrID(id, name) {
-    const result = await this.get(`pokemon-shape/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-
-    return result;
-  }
-
   async getPokemonSpeciesByNameOrID(id, name) {
     const result = await this.get(`pokemon-species/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
 
