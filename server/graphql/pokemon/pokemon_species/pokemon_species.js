@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     pokemonSpecies: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getPokemonSpeciesByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('pokemon-species', id, name);
     }
   },
   PokemonSpecies: {
