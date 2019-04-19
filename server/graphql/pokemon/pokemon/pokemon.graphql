@@ -12,13 +12,13 @@ type Pokemon {
   order: Int
   weight: Int
   abilities: [PokemonAbility]
-  forms: [NamedAPIResource]
+  forms: [PokemonForm]
   gameIndices: [VersionGameIndex]
   heldItems: [PokemonHeldItem]
   locationAreaEncounters: String
   moves: [PokemonMove]
   sprites: PokemonSprites
-  species: NamedAPIResource
+  species: PokemonSpecies
   stats: [PokemonStat]
   types: [PokemonType]
 }

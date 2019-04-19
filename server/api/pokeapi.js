@@ -39,9 +39,15 @@ class PokeAPI extends RESTDataSource {
       result.push(resolved);
 
       return resolved;
-    })); 
+    }));
 
-    return result;
+    return await result;
+  }
+
+  async resolveAPIResource(resource) {
+    const path = resource['url'].replace(this.baseURL, '');
+
+    return await this.get(path);
   }
 }
 
