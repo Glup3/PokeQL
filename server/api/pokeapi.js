@@ -19,8 +19,8 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getPokemons(perPage, page) {
-    const result = await this.get(`pokemon`, {
+  async getEndpointList(endpoint, perPage, page) {
+    const result = await this.get(endpoint, {
       limit: perPage,
       offset: page * perPage
     });
