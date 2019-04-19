@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     moveLearnMethod: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getMoveLearnMethodByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('move-learn-method', id, name);
     }
   },
   MoveLearnMethod: {
