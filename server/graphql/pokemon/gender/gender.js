@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     gender: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getGenderByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('gender', id, name);
     }
   },
   Gender: {

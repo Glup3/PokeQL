@@ -19,12 +19,6 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getGenderByNameOrID(id, name) {
-    const result = await this.get(`gender/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-
-    return result;
-  }
-
   async getGrowthRateByNameOrID(id, name) {
     const result = await this.get(`growth-rate/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
 
