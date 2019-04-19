@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     ability: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getAbilityByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('ability', id, name);
     }
   },
   Ability: {

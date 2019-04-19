@@ -7,8 +7,8 @@ class PokeAPI extends RESTDataSource {
     this.baseURL = 'https://pokeapi.co/api/v2/';
   }
 
-  async getAbilityByNameOrID(id, name) {
-    const result = await this.get(`ability/${MaxSenpaiUtils.getLeftOrRight(id, name) || 25}`);
+  async getEndpointByNameOrID(endpoint, id, name) {
+    const result = await this.get(`${endpoint}/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
 
     return result;
   }
