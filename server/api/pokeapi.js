@@ -19,12 +19,6 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getEvolutionTriggerByNameOrID(id, name) {
-    const result = await this.get(`evolution-trigger/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-    
-    return result;
-  }
-
   async getItemByNameOrID(id, name) {
     const result = await this.get(`item/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
     

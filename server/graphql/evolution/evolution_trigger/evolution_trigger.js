@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     evolutionTrigger: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getEvolutionTriggerByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('evolution-trigger', id, name);
     }
   },
   EvolutionTrigger: {
