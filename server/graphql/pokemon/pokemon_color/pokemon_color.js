@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     pokemonColor: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getPokemonColorByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('pokemon-color', id, name);
     }
   },
   PokemonColor: {

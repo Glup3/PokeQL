@@ -19,12 +19,6 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getPokemonColorByNameOrID(id, name) {
-    const result = await this.get(`pokemon-color/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-
-    return result;
-  }
-
   async getPokemonFormByNameOrID(id, name) {
     const result = await this.get(`pokemon-form/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
 
