@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     pokeathlonStat: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getPokeathlonStatByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('pokeathlon-stat', id, name);
     }
   },
   PokeathlonStat: {
