@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     evolutionChain: (root, { id }, { dataSources }) => {
-      return dataSources.pokeAPI.getEvolutionChainByID(id);
+      return dataSources.pokeAPI.getEndpointByID('evolution-chain', id);
     }
   },
   EvolutionChain: {
