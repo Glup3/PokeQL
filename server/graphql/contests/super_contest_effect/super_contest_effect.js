@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     superContestEffect: (root, { id }, { dataSources }) => {
-      return dataSources.pokeAPI.getSuperContestEffectByID(id);
+      return dataSources.pokeAPI.getEndpointByID('super-contest-effect', id);
     }
   },
   SuperContestEffect: {
