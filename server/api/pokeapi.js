@@ -19,12 +19,6 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getMoveDamageClassByNameOrID(id, name) {
-    const result = await this.get(`move-damage-class/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-    
-    return result;
-  }
-
   async getMoveLearnMethodByNameOrID(id, name) {
     const result = await this.get(`move-learn-method/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
     
