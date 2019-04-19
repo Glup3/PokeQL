@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     berryFlavor: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getBerryFlavorByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('berry-flavor', id, name);
     }
   },
   BerryFlavor: {
