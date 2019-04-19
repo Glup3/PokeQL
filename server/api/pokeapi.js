@@ -19,12 +19,6 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getContestTypeByNameOrID(id, name) {
-    const result = await this.get(`contest-type/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-    
-    return result;
-  }
-
   async getContestEffectByNameOrID(id, name) {
     const result = await this.get(`contest-effect/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
     

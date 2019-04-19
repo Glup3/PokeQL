@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     contestType: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getContestTypeByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('contest-type', id, name);
     }
   },
   ContestType: {
