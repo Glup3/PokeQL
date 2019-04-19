@@ -18,12 +18,6 @@ class PokeAPI extends RESTDataSource {
 
     return result;
   }
-  
-  async getRegionByNameOrID(id, name) {
-    const result = await this.get(`region/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-    
-    return result;
-  }
 
   async getEncounterMethodByNameOrID(id, name) {
     const result = await this.get(`encounter-method/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
