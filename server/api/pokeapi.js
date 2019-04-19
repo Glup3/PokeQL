@@ -4,7 +4,8 @@ const MaxSenpaiUtils = require('../util/text');
 class PokeAPI extends RESTDataSource {
   constructor() {
     super();
-    this.baseURL = 'https://pokeapi.co/api/v2/';
+    // this.baseURL = 'https://pokeapi.co/api/v2/'; // Online Link
+    this.baseURL = 'http://localhost:5080/api/v2/'; // Docker Localhost
   }
 
   async getEndpointByNameOrID(endpoint, id, name) {
