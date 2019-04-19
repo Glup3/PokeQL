@@ -1,6 +1,6 @@
 type Query {
   pokemon(id: Int, name: String): Pokemon
-  pokemons(perPage: Int!, page: Int): APIResourceList
+  pokemons(perPage: Int!, page: Int): NamedAPIResourceList
 }
 
 type Pokemon {
