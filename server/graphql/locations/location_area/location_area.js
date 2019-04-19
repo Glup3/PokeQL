@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     locationArea: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getLocationAreaByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('location-area', id, name);
     }
   },
   LocationArea: {
