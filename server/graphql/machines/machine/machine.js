@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     machine: (root, { id }, { dataSources }) => {
-      return dataSources.pokeAPI.getMachineByID(id);
+      return dataSources.pokeAPI.getEndpointByID('machine', id);
     }
   },
   Machine: {
