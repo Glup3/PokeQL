@@ -28,20 +28,6 @@ class PokeAPI extends RESTDataSource {
     
     return result;
   }
-
-  async resolveResourceList(resourceList) {
-    const data = await resourceList;
-    let resolvedResults = [];
-
-    for (let idx = 0; idx < data['results'].length; idx++) {
-      const urlEnd = data['results'][idx]['url'].replace(this.baseURL, '');
-      const resolvedResult = await this.get(urlEnd);
-
-      resolvedResults.push(resolvedResult);
-    }
-    
-    return resolvedResults;
-  }
 }
 
 module.exports = PokeAPI;
