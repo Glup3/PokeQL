@@ -1,11 +1,12 @@
 type Query {
   berryFlavor(id: Int, name: String): BerryFlavor
+  berryFlavors(perPage: Int!, page: Int!): [BerryFlavor]
 }
 
 type BerryFlavor {
   id: Int!
   name: String
   berries: [FlavorBerryMap]
-  contestType: NamedAPIResource
+  contestType: ContestType
   names: [Name]
 }
