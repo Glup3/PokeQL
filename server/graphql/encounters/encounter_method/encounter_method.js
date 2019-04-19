@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     encounterMethod: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getEncounterMethodByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('encounter-method', id, name);
     }
   }
 }
