@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     eggGroup: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getEggGroupByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('egg-group', id, name);
     }
   },
   EggGroup: {

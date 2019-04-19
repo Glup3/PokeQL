@@ -19,12 +19,6 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getEggGroupByNameOrID(id, name) {
-    const result = await this.get(`egg-group/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-
-    return result;
-  }
-
   async getGenderByNameOrID(id, name) {
     const result = await this.get(`gender/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
 
