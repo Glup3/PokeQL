@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     palParkArea: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getPalParkAreaByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('pal-park-area', id, name);
     }
   },
   PalParkArea: {
