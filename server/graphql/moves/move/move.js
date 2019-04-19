@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     move: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getMoveByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('move', id, name);
     }
   },
   Move: {
