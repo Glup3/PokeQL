@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     contestEffect: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getContestEffectByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('contest-effect', id, name);
     }
   },
   ContestEffect: {
