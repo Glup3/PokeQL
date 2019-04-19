@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     characteristic: (root, { id }, { dataSources }) => {
-      return dataSources.pokeAPI.getCharacteristicByID(id);
+      return dataSources.pokeAPI.getEndpointByID('characteristic', id);
     }
   },
   Characteristic: {

@@ -13,8 +13,8 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getCharacteristicByID(id) {
-    const result = await this.get(`characteristic/${id}`);
+  async getEndpointByID(endpoint, id) {
+    const result = await this.get(`${endpoint}/${id}`);
 
     return result;
   }
