@@ -1,7 +1,7 @@
 exports.resolver = {
   Query: {
     growthRate: (root, { id, name }, { dataSources }) => {
-      return dataSources.pokeAPI.getGrowthRateByNameOrID(id, name);
+      return dataSources.pokeAPI.getEndpointByNameOrID('growth-rate', id, name);
     }
   },
   GrowthRate: {
