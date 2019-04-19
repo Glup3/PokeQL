@@ -18,12 +18,6 @@ class PokeAPI extends RESTDataSource {
 
     return result;
   }
-  
-  async getMoveCategoryByNameOrID(id, name) {
-    const result = await this.get(`move-category/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-    
-    return result;
-  }
 
   async getMoveDamageClassByNameOrID(id, name) {
     const result = await this.get(`move-damage-class/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
