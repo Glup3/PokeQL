@@ -1,10 +1,11 @@
 type Query {
   berryFirmness(id: Int, name: String): BerryFirmness
+  berryFirmnesses(perPage: Int!, page: Int!): [BerryFirmness]
 }
 
 type BerryFirmness {
   id: Int!
   name: String
-  berries: [NamedAPIResource]
+  berries: [Berry]
   names: [Name]
 }
