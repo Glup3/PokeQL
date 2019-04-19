@@ -18,12 +18,6 @@ class PokeAPI extends RESTDataSource {
 
     return result;
   }
-  
-  async getItemCategoryByNameOrID(id, name) {
-    const result = await this.get(`item-category/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-    
-    return result;
-  }
 
   async getItemFlingEffectByNameOrID(id, name) {
     const result = await this.get(`item-fling-effect/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
