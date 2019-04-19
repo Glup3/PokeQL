@@ -19,12 +19,6 @@ class PokeAPI extends RESTDataSource {
     return result;
   }
 
-  async getItemPocketByNameOrID(id, name) {
-    const result = await this.get(`item-pocket/${MaxSenpaiUtils.getLeftOrRight(id, name) || 1}`);
-    
-    return result;
-  }
-
   async getPokemons(perPage, page) {
     const result = await this.get(`pokemon`, {
       limit: perPage,
